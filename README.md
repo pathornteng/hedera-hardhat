@@ -1,16 +1,14 @@
-# Basic Sample Hardhat Project
+# Hedera Hardhat
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+A small repository to demonstrate how to use Hardhat to deploy a smart contract to Hedera network
 
-Try running some of the following tasks:
+## Setup and Run
 
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
+```bash
+git clone git@github.com:pathornteng/hedera-hardhat.git
+cd hedera-hardhat
+npm install
+mv .env_sample .env
+vi .env
+npx hardhat run scripts/deploy.js
 ```
-# hedera-hardhat
